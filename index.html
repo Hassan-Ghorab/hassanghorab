@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the portfolio of Hassan Ghorab, 
+      a passionate Frontend Developer crafting intuitive, responsive, and visually appealing websites. 
+      With expertise in HTML, CSS, JavaScript, and modern frameworks, 
+      I bring creative and user-centered designs to life. 
+      Let's build something amazing together!"
+    />
+    <link rel="icon" type="image/png" href="./assets/light-logo.webp" />
+    <title>Hassan Ghorab</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+  <body>
+    <aside id="preloader">
+      <img
+        src="./assets/light-logo.webp"
+        alt="The logo of Hassan Ghorab to load before the content show."
+        id="preloader-logo"
+      />
+    </aside>
+    <main id="main-content">
+      <header class="header">
+        <div class="container">
+          <a href="./index.html">
+            <img
+              src="./assets/light-logo.webp"
+              alt="The logo of Hassan Ghorab that you can click to go to home page."
+              class="logo"
+              id="logo"
+            />
+          </a>
+
+          <div class="main-nav">
+            <nav class="nav">
+              <button
+                class="close-nav-menu"
+                name="close-menu-outline"
+                aria-label="Close nav menu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  role="img"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+              <ul id="nav-links-list" class="nav-links-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                  <a
+                    href="./assets/Hassan_Ghorab_Resume.pdf"
+                    target="_blank"
+                    title="Read Hassan Ghorab Resume"
+                    >Resume</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-icons">
+              <button
+                id="theme-toggle-btn"
+                class="theme-toggle-btn"
+                aria-label="Toggle theme Icon"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  role="img"
+                >
+                  <path
+                    d="M13.719 1.8A8.759 8.759 0 1 1 1.8 13.719c3.335 1.867 7.633 1.387 10.469-1.449c2.837-2.837 3.318-7.134 1.45-10.47"
+                  />
+                </svg>
+              </button>
+
+              <button
+                class="nav-menu"
+                name="menu-outline"
+                aria-label="Open nav menu"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  role="img"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <article id="home" class="hero section">
+        <div class="container">
+          <h1 class="hero-title">
+            <b class="greeting">Hi 👋 My Name Is</b>
+            <b class="hero-info">
+              <strong>Hassan Ghorab.</strong><br />
+              I am a <strong>Front-End Developer.</strong>
+            </b>
+            <b class="hero-description">
+              I'm a self-taught <strong>Front-End Developer</strong> passionate
+              about building responsive, <br />
+              user-friendly websites and web apps.
+            </b>
+          </h1>
+          <div class="button-links">
+            <a
+              href="./assets/Hassan_Ghorab_Resume.pdf"
+              target="_blank"
+              title="Read Hassan Ghorab Resume"
+              class="btn"
+              >View CV</a
+            >
+            <a
+              href="./assets/Hassan_Ghorab_Resume.pdf"
+              download="Hassan_Ghorab_Resume"
+              class="btn"
+              >Download CV</a
+            >
+            <a
+              href="https://github.com/Hassan-Ghorab"
+              target="_blank"
+              class="btn"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/hassan-ghorab/"
+              target="_blank"
+              class="btn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <article id="about" class="about section">
+        <div class="container">
+          <div class="about-titles">
+            <h2 class="section-about-title">About.</h2>
+            <h3>Who is <strong>Hassan Ghorab</strong>?</h3>
+          </div>
+
+          <section class="about-content">
+            <div class="profile-container">
+              <div class="profile-photo">
+                <img
+                  src="./assets/my-photo.webp"
+                  alt="Profile Photo for Hassan Ghorab"
+                />
+              </div>
+            </div>
+            <section class="about-text">
+              <h2 class="about-subtitle">
+                I'm a <strong>self-taught Frontend Developer</strong> with a
+                deep passion for <strong>Computer Science</strong> and building
+                <strong>exceptional digital experiences</strong>. Specializing
+                in <strong>React</strong>.
+              </h2>
+              <p class="about-p">
+                I bring both the <strong>technical precision</strong> and
+                <strong>visual creativity</strong> needed to craft
+                <strong>modern, responsive, and accessible interfaces</strong>.
+              </p>
+              <p class="about-p">
+                My approach to development is rooted in a strong understanding
+                of
+                <strong>core web technologies—HTML, CSS, and JavaScript</strong
+                >—and how they work under the hood. I believe that
+                <strong>mastering the fundamentals</strong> is essential to
+                building outstanding products, which is why I’ve dedicated
+                significant time to studying not just frameworks, but also
+                <strong
+                  >browser rendering, the DOM, accessibility standards, in-page
+                  SEO, and network behaviors</strong
+                >.
+              </p>
+              <p class="about-p">
+                What drives me is the pursuit of
+                <strong>clean, accessible, and human-friendly code</strong>. I
+                sweat the details because I know that
+                <strong>great user experiences</strong> are built on
+                <strong>thoughtful design and solid engineering</strong>.
+                Whether it's ensuring <strong>semantic HTML</strong>,
+                <strong>optimizing for performance</strong>, or making sure
+                every user—regardless of ability—can
+                <strong>navigate a site smoothly</strong>, I aim to bring that
+                extra layer of care to everything I build. I'm happiest when I’m
+                <strong>creating, learning, and pushing the boundaries</strong>
+                of what’s possible on the web. I'm a
+                <strong>fast learner</strong>, a
+                <strong>dedicated problem-solver</strong>, and I
+                <strong
+                  >thrive in environments where continuous improvement is
+                  valued</strong
+                >.
+              </p>
+              <p class="about-p">
+                I'm currently <strong>open to any opportunity</strong>—feel free
+                to reach out and say hello. I’d love to hear about your project
+                (and I promise I don’t bite 😉).
+                <a class="get-in-touch" href="#contact"
+                  ><em>Get In Touch!</em></a
+                >
+              </p>
+            </section>
+          </section>
+        </div>
+      </article>
+
+      <article id="skills" class="skills section">
+        <div class="container">
+          <h2 class="section-title">My skills.</h2>
+          <dl id="skills-data-list" class="skills-list"></dl>
+        </div>
+      </article>
+
+      <article id="projects" class="projects section">
+        <div class="container">
+          <div class="project-list">
+            <div class="left-column">
+              <div class="intro">
+                <h2>All Creative Works.</h2>
+                <p>
+                  Here's some of my projects that I have worked on.
+                  <a href="https://github.com/Hassan-Ghorab" target="_blank"
+                    ><strong>Explore More GitHub →</strong></a
+                  >
+                </p>
+              </div>
+              <div class="project-card">
+                <img
+                  src="./assets/exclusive-project-image.webp"
+                  alt="exclusive project screenshot"
+                />
+                <div class="project-info">
+                  <div class="project-title-container">
+                    <h3>Exclusive E-commerce Project</h3>
+                    <div class="project-links">
+                      <a
+                        href="https://react-ecommerce-app-xd3q-git-main-hassan-ghorabs-projects.vercel.app/"
+                        target="_blank"
+                        aria-label="Navigate to Exclusive E-commerce project Live page"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://github.com/Hassan-Ghorab/React-Ecommerce-App.git"
+                        target="_blank"
+                        aria-label="Navigate to Exclusive project github repository"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Javascript</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">Vite</span>
+                    <span class="tag">NPM</span>
+                  </div>
+                  <p>
+                    This project was my deep dive into building a full-fledged
+                    <strong>e-commerce platform</strong> using modern frontend
+                    tools. The goal was to create a sleek, responsive shopping
+                    experience with <strong>cart functionalities</strong>,
+                    <strong>authentication</strong>, and
+                    <strong>product filtering</strong>. I chose
+                    <strong>React</strong> for its component-based architecture,
+                    combined with <strong>Firebase</strong> for quick
+                    authentication and real-time database support. The UI was
+                    crafted using <strong>CSS</strong> and
+                    <strong>HTML</strong>, and the project was scaffolded using
+                    <strong>Vite</strong> for blazing-fast builds and
+                    <strong>NPM</strong> for dependency management.
+                    <span class="break"></span>
+
+                    One of the major challenges was handling cart updates in
+                    real-time while maintaining a smooth UX. I solved this by
+                    implementing a global state using
+                    <strong>React’s Context API</strong>, ensuring updates
+                    reflected instantly across components. Integrating
+                    <strong>Firebase auth</strong> also pushed me to understand
+                    async workflows more deeply. <span class="break"></span>
+
+                    Through this project, I learned how to structure a scalable
+                    frontend, handle real-world features like
+                    <strong>sorting</strong>, <strong>filtering</strong>, and
+                    <strong>form validation</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-column">
+              <div class="project-card">
+                <img
+                  src="./assets/taskfiy-project-image.webp"
+                  alt="taskfiy project screenshot"
+                />
+                <div class="project-info">
+                  <div class="project-title-container">
+                    <h3>Taskfiy</h3>
+                    <div class="project-links">
+                      <a
+                        href="https://ts-vite-todo-list-project.vercel.app/"
+                        target="_blank"
+                        aria-label="Navigate to Taskfiy project Live page"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://github.com/Hassan-Ghorab/ts-vite-todo-list-project.git"
+                        target="_blank"
+                        aria-label="Navigate to Taskfiy project github repository"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">Sass</span>
+                    <span class="tag">Typescript</span>
+                    <span class="tag">Vite</span>
+                    <span class="tag">Yarn</span>
+                  </div>
+                  <p>
+                    Taskfiy was born from a need to manage my daily goals
+                    efficiently. It’s a sleek, minimal task manager built with
+                    <strong>TypeScript</strong> and styled using
+                    <strong>SASS</strong>. I designed the UI with accessibility
+                    and simplicity in mind, and used <strong>Vite</strong> and
+                    <strong>Yarn</strong> to streamline development. The goal
+                    was to focus on user experience, allowing users to add,
+                    edit, mark complete, and delete tasks with ease.
+                    <span class="break"></span>
+
+                    <strong>TypeScript</strong> introduced me to strong typing
+                    and how it enhances developer productivity and code safety.
+                    I initially struggled with type definitions, especially
+                    while passing props and managing state, but learning to use
+                    <strong>interfaces</strong> and
+                    <strong>custom types</strong> significantly improved the
+                    robustness of my code.
+                    <span class="break"></span>
+
+                    A major learning experience came from implementing
+                    <strong>local storage</strong> to persist tasks across
+                    reloads, which deepened my understanding of
+                    <strong>browser APIs</strong>.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <img
+                  src="./assets/comfy-project-image.webp"
+                  alt="Comfy project screenshot"
+                />
+                <div class="project-info">
+                  <div class="project-title-container">
+                    <h3>Comfy Store</h3>
+                    <div class="project-links">
+                      <a
+                        href="https://hassan-ghorab.github.io/comfy-store-ecommerce-project/"
+                        target="_blank"
+                        aria-label="Navigate to Comfy project Live page"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="https://github.com/Hassan-Ghorab/comfy-store-ecommerce-project.git"
+                        target="_blank"
+                        aria-label="Navigate to Comfy project github repository"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Javascript</span>
+                    <span class="tag">JS Modules</span>
+                  </div>
+                  <p>
+                    <strong>Comfy Store</strong> was a fun exploration into
+                    building a shopping cart experience using
+                    <strong>vanilla JavaScript</strong> and
+                    <strong>JS Modules</strong>. I intentionally avoided
+                    frameworks to better understand core
+                    <strong>JavaScript</strong> and the <strong>DOM</strong>.
+                    The project allowed users to browse products, add them to
+                    cart, and see the cart total update dynamically.
+                    <span class="break"></span>
+
+                    The biggest technical challenge was managing
+                    <strong>cart state</strong> using modules without any
+                    external library. I structured the code into
+                    <strong>modules</strong> for fetching data, managing UI
+                    updates, and <strong>cart logic</strong>. Implementing the
+                    <strong>cart dropdown toggle</strong> and
+                    <strong>real-time updates</strong> helped me master
+                    <strong>event delegation</strong> and
+                    <strong>localStorage</strong> usage.
+                    <span class="break"></span>
+
+                    I also put effort into making the UI
+                    <strong>responsive</strong> using <strong>CSS</strong>, and
+                    learned about <strong>lazy loading</strong> and
+                    <strong>performance optimization</strong>. This project
+                    boosted my confidence in building complex apps with just
+                    <strong>JavaScript</strong>. I plan to refactor this app to
+                    use <strong>TypeScript</strong> and implement a
+                    <strong>backend</strong> for product management in the
+                    future.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section id="contact" class="contact section">
+        <div class="container">
+          <h2 class="section-title contact-title">Keep In Touch.</h2>
+          <p class="contact-desc">
+            I'm currently specializing in
+            <strong>Front-end Development.</strong>
+          </p>
+          <p class="contact-desc">
+            If you have any opportunity, suggestion or feedback we would love to
+            hear from you!
+          </p>
+
+          <div class="contact-links">
+            <a
+              href="./assets/Hassan_Ghorab_Resume.pdf"
+              target="_blank"
+              title="Read Hassan Ghorab Resume"
+              class="btn"
+              aria-label="Read the Resume of Hassan Ghorab."
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M249.18 328.324c-9.788 15.384-19.179 30.434-40.222 45.055c-11.256 7.89-37.164 23.306-73.99 23.306C64.709 396.685 8 345.605 8 255.801c0-78.486 53.345-140.486 128.466-140.486c30.434 0 57.474 10.521 77.387 26.304c18.414 14.65 27.038 29.304 34.563 42.456l-52.58 26.273c-3.762-8.626-8.29-17.649-19.913-27.406c-12.784-10.155-25.54-13.152-36.46-13.152c-42.821 0-65.364 39.825-65.364 84.145c0 58.238 29.7 87.143 65.364 87.143c34.563 0 48.48-24.042 57.474-39.426zm184.194-204.75H504l-92.037 265.22h-67.597l-90.904-265.22h70.625l54.843 188.6z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://github.com/Hassan-Ghorab"
+              target="_blank"
+              class="btn"
+              title="GitHub"
+              aria-label="Navigate to Hassan Ghorab's github."
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.001 2c-5.525 0-10 4.475-10 10a9.99 9.99 0 0 0 6.837 9.488c.5.087.688-.213.688-.476c0-.237-.013-1.024-.013-1.862c-2.512.463-3.162-.612-3.362-1.175c-.113-.288-.6-1.175-1.025-1.413c-.35-.187-.85-.65-.013-.662c.788-.013 1.35.725 1.538 1.025c.9 1.512 2.337 1.087 2.912.825c.088-.65.35-1.087.638-1.337c-2.225-.25-4.55-1.113-4.55-4.938c0-1.088.387-1.987 1.025-2.687c-.1-.25-.45-1.275.1-2.65c0 0 .837-.263 2.75 1.024a9.3 9.3 0 0 1 2.5-.337c.85 0 1.7.112 2.5.337c1.913-1.3 2.75-1.024 2.75-1.024c.55 1.375.2 2.4.1 2.65c.637.7 1.025 1.587 1.025 2.687c0 3.838-2.337 4.688-4.562 4.938c.362.312.675.912.675 1.85c0 1.337-.013 2.412-.013 2.75c0 .262.188.574.688.474A10.02 10.02 0 0 0 22 12c0-5.525-4.475-10-10-10"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/hassan-ghorab/"
+              target="_blank"
+              class="btn"
+              title="LinkedIn"
+              aria-label="Navigate to Hassan Ghorab's Linkedin."
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  cx="4"
+                  cy="4"
+                  r="2"
+                  fill="currentColor"
+                  fill-opacity="0"
+                >
+                  <animate
+                    fill="freeze"
+                    attributeName="fill-opacity"
+                    dur="0.15s"
+                    values="0;1"
+                  />
+                </circle>
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                >
+                  <path
+                    stroke-dasharray="12"
+                    stroke-dashoffset="12"
+                    d="M4 10v10"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.15s"
+                      dur="0.2s"
+                      values="12;0"
+                    />
+                  </path>
+                  <path
+                    stroke-dasharray="12"
+                    stroke-dashoffset="12"
+                    d="M10 10v10"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.45s"
+                      dur="0.2s"
+                      values="12;0"
+                    />
+                  </path>
+                  <path
+                    stroke-dasharray="24"
+                    stroke-dashoffset="24"
+                    d="M10 15c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5v5"
+                  >
+                    <animate
+                      fill="freeze"
+                      attributeName="stroke-dashoffset"
+                      begin="0.65s"
+                      dur="0.2s"
+                      values="24;0"
+                    />
+                  </path>
+                </g>
+              </svg>
+            </a>
+
+            <a
+              href="mailto:hassan.adel.hl1@gmail.com"
+              target="_blank"
+              class="btn"
+              title="Email"
+              aria-label="Navigate to Hassan Ghorab's Email."
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="m4.2 5.2l7.56 5.67a.4.4 0 0 0 .48 0L19.8 5.2zm16.6.75l-7.84 5.88a1.6 1.6 0 0 1-1.92 0L3.2 5.95V18.8h17.6zM3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://wa.me/01154072765"
+              target="_blank"
+              class="btn"
+              title="Chat"
+              aria-label="Navigate to Hassan Ghorab's WhatsApp."
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222c0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222c0-59.3-25.2-115-67.1-157m-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4l-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2c0-101.7 82.8-184.5 184.6-184.5c49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6m101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18c-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4c-32.6-16.3-54-29.1-75.5-66c-5.7-9.8 5.7-9.1 16.3-30.3c1.8-3.7.9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5c-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8c35.2 15.2 49 16.5 66.6 13.9c10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          &copy; <b id="year" class="year"></b>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="currentColor"
+              d="M14.5 0h-13C.675 0 0 .675 0 1.5v13c0 .825.675 1.5 1.5 1.5h13c.825 0 1.5-.675 1.5-1.5v-13c0-.825-.675-1.5-1.5-1.5M6 13H4V6h2zM5 5a1 1 0 1 1 0-2a1 1 0 1 1 0 2m8 8h-2V9a1 1 0 1 0-2 0v4H7V6h2v1.241C9.412 6.675 10.044 6 10.75 6C11.994 6 13 7.119 13 8.5z"
+            />
+          </svg>
+          <strong><a href="#">Hassan Ghorab</a></strong> All rights reserved.
+        </p>
+      </footer>
+    </main>
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
+  </body>
+</html>

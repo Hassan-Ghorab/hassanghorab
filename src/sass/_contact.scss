@@ -1,0 +1,24 @@
+.contact {
+  padding-top: var(--section-padding);
+}
+
+.contact-title {
+  margin-bottom: 1.5rem;
+}
+
+.contact-desc {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-links .btn {
+  padding: 0.6rem 1rem;
+}

@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding-section);
+}
+
+body {
+  background-color: var(--main-bg-color);
+  color: var(--light-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'><path fill='%23e3a14a' fill-rule='evenodd' d='M1.972.08H1.97A1.49 1.49 0 0 0 .08 1.97l.473-.162l-.473.163l.001.002l.002.006l.008.024l.032.092l.12.35L.675 3.7l3.07 8.944l.128.373l.035.104l.01.03a.995.995 0 0 0 1.73.56a1 1 0 0 0 .193-.26c.045-.088.078-.187.11-.279l.001-.004l.995-2.87l.65-1.876l.213-.613l.002-.005l.007-.002l.617-.218l1.885-.667a323 323 0 0 0 2.878-1.027l.046-.018c.11-.043.307-.118.465-.276a.994.994 0 0 0 0-1.406l-.01-.01a1.3 1.3 0 0 0-.182-.164a1.2 1.2 0 0 0-.373-.169h-.002l-.035-.012L13 3.8l-.382-.127l-1.298-.436A5548 5548 0 0 1 3.687.66L2.441.24L2.093.12L2 .091l-.023-.01z' clip-rule='evenodd'/></svg>")
+      7 7,
+    auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.container {
+  width: 95dvw;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-title {
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+#preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#preloader-logo {
+  width: 100px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+*:focus-visible {
+  outline: transparent;
+  box-shadow: 0 0 0 0.5rem rgb(180, 114, 28, 0.6) !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.9rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #cfcdcd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b4721c;
+  border-radius: 1000px;
+  height: 30rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color);
+}
+
+.add-display-none {
+  display: none;
+}
