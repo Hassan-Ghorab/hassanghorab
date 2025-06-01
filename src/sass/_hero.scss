@@ -14,16 +14,13 @@
   font-weight: normal;
 }
 
-.hero-title strong {
+.hero-title strong,
+.hero-description strong {
   background: var(--text-shadow);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-
-.hero-info {
-  font-size: 4rem;
 }
 
 .hero-description {
