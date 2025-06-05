@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.hero-title {
+h1.hero-title {
   font-size: 4rem;
 }
 
@@ -57,7 +57,7 @@
 }
 
 @media (min-width: 768px) {
-  .hero-title {
+  h1.hero-title {
     font-size: 8rem;
   }
 
